@@ -31,4 +31,8 @@
 		<delete dir="build" />
 	</target>
 	
+	<target name="env">
+	<exec executable="sh"> <arg value="export PROJECT_ENV=prod"/> </exec>
+	</target>
+	
 </project>
