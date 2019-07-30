@@ -1,2 +1,3 @@
 #!/bin/bash
-export DECRYPTRNV="hihello"
+export Test="hihello"
+
