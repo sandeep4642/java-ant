@@ -35,7 +35,7 @@
         <target name="runscript.unix">
 		<echo>This is an Ubuntu machine.</echo>
 	   	<exec dir="." executable="/bin/sh">
-	     		<arg line="-c /test.bat 'm4 foo.m4 > foo'"/>
+	     		<arg line="-c /test.sh 'm4 foo.m4 > foo'"/>
 		</exec>
 	</target>
 	
