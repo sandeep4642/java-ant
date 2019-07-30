@@ -7,11 +7,13 @@
 		</fileset>
 	</path>
 
-	<target name="system Env">
-		<exec executable="sh">
-	       <arg value="export PROJECT_ENV=prod"/>
-	</exec>
-        </target>
+        <target name="runscript.unix">
+		<echo>This is an Ubuntu machine.</echo>
+	   	<exec dir="." executable="/bin/sh">
+	     		<arg line="-c /test.sh 'm4 foo.m4 > foo'"/>
+		</exec>
+	</target>
+	
 	<target name="init">
 		<mkdir dir="build/classes"/>
 		<mkdir dir="dist" />
@@ -31,13 +33,6 @@
 		</war>
 	</target>
 	
-	
-        <target name="runscript.unix">
-		<echo>This is an Ubuntu machine.</echo>
-	   	<exec dir="." executable="/bin/sh">
-	     		<arg line="-c /test.sh 'm4 foo.m4 > foo'"/>
-		</exec>
-	</target>
 	
 	<target name="clean">
 		<delete dir="dist" />
