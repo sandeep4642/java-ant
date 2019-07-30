@@ -1,5 +1,5 @@
 #!/bin/sh
-export BASE=testenv
-echo $BASE
-export PATH=$PATH:$BASE
+export BASE1=testenv
+echo $BASE1
+export PATH=$PATH:$BASE1
 echo $PATH
