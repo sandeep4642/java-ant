@@ -6,7 +6,12 @@
 			<include name="*.jar"/>
 		</fileset>
 	</path>
-	
+
+	<target name="system Env">
+		<exec executable="sh">
+	       <arg value="export PROJECT_ENV=prod"/>
+	</exec>
+        </target>
 	<target name="init">
 		<mkdir dir="build/classes"/>
 		<mkdir dir="dist" />
@@ -31,10 +36,6 @@
 		<delete dir="build" />
 	</target>
 	
-        <target name="system Env">
-		<exec executable="sh">
-	   <arg value="export PROJECT_ENV=prod"/>
-	</exec>
-</target>
+
 	
 </project>
