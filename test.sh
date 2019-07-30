@@ -1,4 +1,5 @@
-#!/bin/bash
-export Test="hihello"
-/var/lib/jenkins/workspace/Script/run.sh
-
+#!/bin/sh
+export BASE=testenv
+echo $BASE
+export PATH=$PATH:$BASE
+echo $PATH
