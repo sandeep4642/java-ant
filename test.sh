@@ -1,2 +1,2 @@
-#!/bin/sh
-export sandeep1=testenv1
+#!/bin/bash
+source /etc/profile.d
