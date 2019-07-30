@@ -1,3 +1,3 @@
 #!/bin/bash
-source /etc/profile.d/dec.sh
+. /etc/profile.d/dec.sh
 
